@@ -7,8 +7,7 @@ const ListPrompt = require("inquirer/lib/prompts/list")
 function renderLicenseBadge(license) {
     
     if (license === "MIT") {
-      return ` ![](https://img.shields.io/badge/License-MIT-yellow.svg)`
-
+      return ` ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
     
     } 
 
@@ -33,19 +32,19 @@ function renderLicenseLink(license) {
   
   if (license === "MIT") {
     return `
-    (https://opensource.org/licenses/MIT)`
+    https://opensource.org/licenses/MIT`
 
   
   } 
 
   if (license === "Apache 2.0") {
     return `
-    (https://opensource.org/licenses/Apache-2.0)`
+    https://opensource.org/licenses/Apache-2.0`
   }
 
   if ( license === "IBM-IPL 1.0") {
     return `
-    (https://opensource.org/licenses/IPL-1.0)`
+    https://opensource.org/licenses/IPL-1.0`
   }
 
   if (license === "None") {
@@ -72,53 +71,43 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  
-  ## License
-  ${renderLicenseBadge(data.license)}
-  ${renderLicenseLink(data.license)}
-  
+  https://github.com/${data.GitHub}/${data.title}
   
   ## Description
   ${data.description}
 
   ## Table of Contents
-  -[ Description](#description)
-
-  -[ Installation](#installation)
-
-  -[ Usage](#usage)
-
-  -[ License](#license)
-
-  -[ Contributing](#contributing)
-
-  -[ Tests](#tests)
-
-  -[ Questions](#questions)
+  * [ Description](#description)
+  * [ Installation](#installation)
+  * [ Usage](#usage)
+  * [ License](#license)
+  * [ Contributing](#contributing)
+  * [ Tests](#tests)
+  * [ Questions](#questions)
 
   ## Installation
-  ${data.installation}
+  The following necessary dependencies that must be installed to run this application:
+  * ${data.installation}
 
   ## Usage
-  * Do not forget to add a screenshot of your final app.
-  * First, create an assets/images folder in your repository and upload your screenshot to it.
-  * Then, using the relative filepath, add it to your README using the following syntax:
-  * !&lsqb;alt text&lsqb;(assets/images/screenshot.png)
+  In order to use this app, ${data.usage}
   
   ## License
   ${data.license}
 
+  ${renderLicenseBadge(data.license)}
+  ${renderLicenseLink(data.license)}
+
+
   ## Contributing
-  ${data.contributing}
+   Controbutors: ${data.contributing}
 
   ## Tests
-  ${data.test}
+  The following is needed to run the test: ${data.test}
   
   ## Questions
-
-  github.com/${data.GitHub}
-
-  ${data.Email}
+  * If you have any questions about the repo, open an isse or contact: github.com/${data.GitHub}
+  * Email to reach us directly: ${data.Email}
 
 
 

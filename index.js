@@ -24,7 +24,7 @@ const questions = [
       type: "input",
       name: "installation",
       message: "What commands should we run for dependencies?",
-      default: "npm i",
+      default: "fs",
     },
     {
       type: "list",
@@ -35,13 +35,13 @@ const questions = [
     {
       type: "input",
       name: "contributing",
-      message: "How does a user contribute to this project?",
+      message: "Who contributed to this project?",
     },
     {
       type: "input",
       name: "test",
       message: "What commands should be run for tests?",
-      default: "npm run test",
+      default: "node index.js",
     },
     {
       type: "input",

@@ -1,52 +1,42 @@
-# BLJDDJHSJLHSC
-  
-  ## License
-  ![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg) 
-  
-    (https://opensource.org/licenses/Apache-2.0)
-  
+# ReadMeGenerator
+  https://github.com/KiloWattDot/ReadMeGenerator
   
   ## Description
-  KAHS;KAJHSCLJK
+  This an app that allows for developers to create a professional ReadMe.md file that is convenient and efficeint to use. This will assist with developers ensuring their projetcs are clear for a person using their app are easy to follow.
 
   ## Table of Contents
-  -[ Description](#description)
-
-  -[ Installation](#installation)
-
-  -[ Usage](#usage)
-
-  -[ License](#license)
-
-  -[ Contributing](#contributing)
-
-  -[ Tests](#tests)
-
-  -[ Questions](#questions)
+  * [ Description](#description)
+  * [ Installation](#installation)
+  * [ Usage](#usage)
+  * [ License](#license)
+  * [ Contributing](#contributing)
+  * [ Tests](#tests)
+  * [ Questions](#questions)
 
   ## Installation
-  AKSCH;SLJH
+  The following necessary dependencies that must be installed to run this application:
+  * fs, inquirer, util
 
   ## Usage
-  * Do not forget to add a screenshot of your final app.
-  * First, create an assets/images folder in your repository and upload your screenshot to it.
-  * Then, using the relative filepath, add it to your README using the following syntax:
-  * !&lsqb;alt text&lsqb;(assets/images/screenshot.png)
+  In order to use this app, undefined
   
   ## License
-  Apache 2.0
+  IBM-IPL 1.0
+
+   ![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)
+  
+    https://opensource.org/licenses/IPL-1.0
+
 
   ## Contributing
-  NACS;KNC
+   Controbutors: Dorothy Gilchrist
 
   ## Tests
-  ASJBC;JK;
+  The following is needed to run the test: node index.js
   
   ## Questions
-
-  github.com/ACJBSJC;
-
-  AJCHSJBHLAHCJS
+  * If you have any questions about the repo, open an isse or contact: github.com/KiloWattDot
+  * Email to reach us directly: Doro.gilchrist@gmail.com
 
 
 
